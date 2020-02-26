@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flyin</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/css/styles.css">
+  <link rel="stylesheet" href="./public/css/flyin.css">
+</head>
+
+<body>
+  <div id="root" class="overflowWrapper" style="overflow: hidden;">
+    <div class="abovefold pageMinWidth">
+      <div class="cover"></div>
+      <header class="container-fluid d-flex align-items-center py-3">
+        <button class="menuToggler btn btn-outline-light d-lg-none mr-3 font-12"><i class="fas fa-bars"></i></button>
+        <div class="logo mr-4">
+          <a href="">
+            <span class="font-28">Flyin</span>
+          </a>
+        </div>
+        <div class="navlinks font-14">
+          <button class="menuToggler mx-3 mb-3 mb-lg-0 btn btn-outline-light d-lg-none mr-3 font-12"><i class="fas fa-bars"></i></button>
+          <a href="" class="mx-3 text-nowrap">FLIGHTS</a>
+          <a href="" class="mx-3 text-nowrap">HOTELS</a>
+          <a href="" class="mx-3 text-nowrap">CAR RENTALS</a>
+          <a href="" class="mx-3 text-nowrap">TOURS</a>
+          <button class="mx-3 mt-3 mt-lg-0 py-1 px-2 button-outline rounded-pill font-14 text-nowrap">FAVORITES</button>
+        </div>
+        <div class="ml-auto account d-flex align-items-center">
+          <button class="d-flex align-items-center mr-3">
+            <span class="font-14 text-nowrap">JOHN C.</span>
+          </button>
+          <button class="d-flex align-items-center border rounded-pill">
+            <div class="border-right font-12 py-1 px-2 d-flex align-items-center">
+              <span class="mr-1 d-none d-md-block text-nowrap">
+                <i class="fas fa-globe-asia"></i>
+              </span>
+              ENG
+            </div>
+            <div class="font-12 py-1 px-2 text-nowrap">AUD</div>
+          </button>
+        </div>
+      </header>
+      <section class="container hero">
+        <h3>LOOKING FOR AN ESCAPE?</h3>
+        <p>Book an amazing adventure today.</p>
+
+
+        <div class="tripSearchFormContainer">
+          <form id="tripSearchForm" class="row m-0 mb-1 align-items-center overflow-hidden rounded">
+            <div class="col-12 col-lg p-0 position-relative border-right">
+              <i class="fas fa-plane-departure text-primary"
+                style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%);"></i>
+              <input list="origins" class="form-control position-relative border-0 rounded-0 font-12 pl-5"
+                placeholder="From">
+              <datalist id="origins">
+                <option value="Sydney"></option>
+              </datalist>
+            </div>
+
+
+            <div class="col-12 col-lg p-0 position-relative border-right">
+              <i class="fas fa-plane-arrival text-primary"
+                style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%);"></i>
+              <input list="destinations" class="form-control position-relative border-0 rounded-0 font-12 pl-5"
+                placeholder="To">
+              <datalist id="destinations">
+                <option value="Bahamas"></option>
+                <option value="Hawaii"></option>
+                <option value="Indonesia"></option>
+                <option value="Maldives"></option>
+                <option value="Tahiti"></option>
+              </datalist>
+            </div>
+
+
+            <div class="col-12 col-lg p-0 position-relative border-right">
+              <i class="fas fa-calendar text-primary"
+                style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%);"></i>
+              <input type="date" class="form-control position-relative font-12 border-0 rounded-0 pl-5"
+                placeholder="Departure Date">
+            </div>
+
+
+            <div class="col-12 col-lg p-0 position-relative">
+              <i class="fas fa-calendar text-primary"
+                style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%);"></i>
+              <input type="date" class="form-control position-relative font-12 border-0 rounded-0 pl-5"
+                placeholder="Return Date">
+            </div>
+
+
+            <div class="col-12 col-lg-auto p-0">
+              <button class="btn btn-block btn-danger rounded-0 font-12">SEARCH</button> </div>
+          </form>
+
+          <div class="position-relative">
+            <span class="errorMessage small rounded px-3 py-1">This form does not do anything</span>
+          </div>
+        </div>
+
+      </section>
+      <div class="spacer"></div>
+    </div>
+
+    <main class="pageMinWidth pb-5">
+      <div class="banner--info mt-n5 mb-5">
+        <div class="container">
+          <div class="shadow-lg bg-white rounded">
+            <div class="row m-0 justify-content-center">
+              <div class="col-auto d-flex flex-column justify-content-center mx-3 py-3">
+                <p class="m-0 font-14"><b>Come visit your dream destinations.</b></p>
+                <p class="m-0 font-14"><b>Go on a much needed vacation.</b></p>
+              </div>
+              <div class="col-auto py-3 pb-2">
+                <div class="row">
+                  <div class="col-4 col-lg-2 text-center mb-2">
+                    <div class="rounded-circle mb-1 mx-auto position-relative"
+                      style="height: 60px; width: 60px; background-color: rgb(60, 156, 216);">
+                      <i class="fas fa-sun text-white font-30"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                    <p class="m-0 font-12"><b>Sun</b></p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center mb-2">
+                    <div class="rounded-circle mb-1 mx-auto position-relative"
+                      style="height: 60px; width: 60px; background-color: rgb(60, 156, 216);">
+                      <i class="fas fa-users text-white font-30"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                    <p class="m-0 font-12"><b>Friends</b></p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center mb-2">
+                    <div class="rounded-circle mb-1 mx-auto position-relative"
+                      style="height: 60px; width: 60px; background-color: rgb(60, 156, 216);">
+                      <i class="fas fa-binoculars text-white font-30"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                    <p class="m-0 font-12"><b>Sights</b></p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center mb-2">
+                    <div class="rounded-circle mb-1 mx-auto position-relative"
+                      style="height: 60px; width: 60px; background-color: rgb(60, 156, 216);">
+                      <i class="fas fa-map-marked-alt text-white font-30"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                    <p class="m-0 font-12"><b>Places</b></p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center mb-2">
+                    <div class="rounded-circle mb-1 mx-auto position-relative"
+                      style="height: 60px; width: 60px; background-color: rgb(60, 156, 216);">
+                      <i class="fas fa-skiing text-white font-30"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                    <p class="m-0 font-12"><b>Experiences</b></p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center mb-2">
+                    <div class="rounded-circle mb-1 mx-auto position-relative"
+                      style="height: 60px; width: 60px; background-color: rgb(60, 156, 216);">
+                      <i class="fas fa-utensils text-white font-30"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                    <p class="m-0 font-12"><b>Food</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="font-24 m-0" style="color: rgb(63, 103, 204);"><b>TRAVEL THE WORLD WORRY-FREE</b></p>
+        <p style="opacity: 0.8;">See beautiful beaches and forests around the world.</p>
+
+        <div class="mb-3" id="filterTagsContainer">
+          <!-- <button class="filterTag active mb-3 mr-3 px-3 font-14 rounded-pill" data-country="Maldives">MALDIVES</button> -->
+        </div>
+
+        <div class="row" id="destinationContainer" style="min-height: 200px;">
+          <!-- <div class="col-12 col-sm-6 col-md-3 mb-5">
+            <div class="w-100 rounded" style="padding-top: 60%; background-color: grey;"></div>
+            <p class="m-0"><b>Coast of Malta</b></p>
+            <p>Explore the isles abd bright blue sea around the Coast of Malta.</p>
+          </div> -->
+        </div>
+
+      </div>
+    </main>
+
+
+
+    <footer>
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <p class="m-0"><a href="./public/img/flyin_reference.png" target="_blank">Design reference (Dribbble)</a></p>
+        <p class="m-0"><a href="https://www.planetware.com/seychelles/best-tropical-vacations-sey-1-12.htm" target="_blank">Content reference (PlanetWare)</a></p>  
+      </div>
+    </footer>
+  </div>
+
+  <script src="./public/js/jquery-3.4.1.min.js"></script>
+  <script src="./public/js/bootstrap.bundle.min.js"></script>
+  <script src="./public/js/flyin.js"></script>
+</body>
+
+</html>
